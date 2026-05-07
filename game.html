@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Feet | Intro </title>
+
+    <!--favicon-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-icon-180x180.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png">
+
+    <!-- Bootstrap CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  <header>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/favicon/apple-icon-180x180.png" alt="Space Feet logo" class="logo">
+                <span class="ms-2">Space Feet</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                   <li class="nav-item">
+                        <a class="nav-link" href="index.html">Intro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="game.html">Game</a>
+                    </li>
+ 
+                </ul>
+            </div>
+        </div>
+    </nav>
+  </header>
+
+  <!--main content-->
+  <main>
+        
+      <p>The game</p>
+  </main>
+
+  <!-- footer -->
+   <footer id="contact" class="container">
+    <div class="row justify-content-center">
+      <!-- my-4 used to add top and bottom margin to heading -->
+      <div class="col-12 text-center mt-4">
+        <h2 class="display-5">Contact</h2>
+        <!-- Button trigger social mediamodal-->
+        <button type="button" class="btn btn-primary custom-button sharp-corners" data-bs-toggle="modal" data-bs-target="#socialmediaModal"><img src="assets/images/social-media.png" width="40" height="35" alt="Social Media">
+        </button>     
+        <!-- Button trigger contactmodal -->
+        <button type="button" class="btn btn-primary custom-button sharp-corners" data-bs-toggle="modal" data-bs-target="#contactModal"><img src="assets/images/hand.png" width="40" height="35" alt="Email">
+        </button>    
+        <!-- Button trigger phonemodal -->
+        <button type="button" class="btn btn-primary custom-button sharp-corners" data-bs-toggle="modal" data-bs-target="#phoneModal"><img src="assets/images/phone.png" width="40" height="35" alt="Phone">
+        </button>
+        <!-- Button trigger visitmodal -->
+        <button type="button" class="btn btn-primary custom-button sharp-corners" data-bs-toggle="modal" data-bs-target="#visitModal"><img src="assets/images/map.png" width="40" height="35" alt="Visit">
+        </button>
+         <!-- Button trigger bookingmodal -->
+        <button type="button" class="btn btn-primary custom-button sharp-corners" data-bs-toggle="modal" data-bs-target="#bookingModal"><img src="assets/images/booking.png" width="40" height="35" alt="Visit">
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Social media Modal -->
+  <div class="modal fade" id="socialmediaModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content sharp-corners">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5">Social Media Links</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body"> 
+          <ul id="menu">
+            <li>
+              <a
+              href="https://www.facebook.com/profile.php?id=100091910170936"
+              target="_blank"
+              rel="noopener"
+              aria-label="visit our facebook page (opens in a new tab)"
+              ><i class="fa-brands fa-facebook"></i>
+                <span>visit our facebook page (opens in a new tab)</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.twitter.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="visit our twitter page (opens in a new tab)"
+                ><i class="fa-brands fa-square-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="visit our youtube page (opens in a new tab)"
+                ><i class="fa-brands fa-square-youtube"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="visit our instagram page (opens in a new tab)"
+                ><i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+          </ul>        
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content sharp-corners">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5">Message Us</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="row g-3 sharp-corners">
+            <div class="col-md-6 col-lg">
+              <label for="fullName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="fullName" required>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <label for="phone" class="form-label">Phone</label>
+              <input type="number" class="form-control" id="phone" required>
+            </div>
+            <div class="col-12 col-lg-4">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4" required>
+            </div>
+            <div class="col-12">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="3" required></textarea>
+            </div>  
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary custom-button">Send</button>
+            </div>
+              <p>Maybe you dont want to fill out the form? email us at blbaptistchurch@gmail.com</p>
+          </form>            
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Phone Modal -->
+  <div class="modal fade" id="phoneModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content sharp-corners">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5">Phone Numbers</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">   
+          <ul id="menu">
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <span>01536 725434</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <span>01536 720238</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-mobile-screen-button"></i>
+              <span>07566 756226</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Visit us Modal -->
+  <div class="modal fade" id="visitModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content sharp-corners">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5">Visit Us At 29 Meeting Lane, Burton Latimer, Kettering, NN15 5LS</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body"> 
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.314209647015!2d-0.6795645887136005!3d52.36472237190413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487798a958d9c9ab%3A0x61f52fa78d8accd5!2s29%20Yeomans%20Ct%2C%20Meeting%20Ln%2C%20Burton%20Latimer%2C%20Kettering%20NN15%205GS!5e0!3m2!1sen!2suk!4v1776963842135!5m2!1sen!2suk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Bootstrap JS Script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- jave script for Font Awesome icons -->
+    <script
+      src="https://kit.fontawesome.com/d5bcb50af0.js"
+      crossorigin="anonymous"
+    ></script>
+</body>
+
+</html>
+
+
+
+ 
