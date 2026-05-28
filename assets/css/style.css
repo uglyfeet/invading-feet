@@ -2,7 +2,11 @@
 /* global styles */
 
 
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Unica+One&display=swap');
+                         /*   @import url('https://fonts.cdnfonts.com/css/star-wars');*/
+     @import url(https://db.onlinewebfonts.com/c/c00548f5d217ed324ae9096051927001?family=STARWARS);           
+
+/* @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Unica+One&display=swap');*/
+
 
 /*
 $majorelle-blue: #574ae2ff;
@@ -14,8 +18,8 @@ $mauve: #e2adf2ff; */
 
 /* CSS Variables */ 
 :root {
-    --primary-font: "Audiowide", cursive;
-    --secondary-font: "Unica One", cursive;
+    --primary-font: "starwars", sans-serif;
+    --secondary-font: "starwars", sans-serif;
     --primary-color:#654597ff;
     --secondary-color:#222a68ff;
     --highlight-color: #ab81cdff;
@@ -24,10 +28,156 @@ $mauve: #e2adf2ff; */
 
 
 body {
+	margin: 0;
+	background-color: #000;
+	overflow: hidden;
     font-family: var(--secondary-font);
-    background-color: var(--secondary-color);
     padding-top: 57.15px; /* pushes the top of the header down under fixed navbar */
 }
+
+body::after {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 80vh;
+	background: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 1) 61%,
+		rgba(0, 0, 0, 0.54) 79%,
+		rgba(0, 0, 0, 0) 100%
+	);
+	z-index: 1;
+}
+
+.stars {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	background-color: #fff;
+	z-index: 2;
+}
+
+.intro {
+	position: absolute; 
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	color: rgb(75, 213, 238);
+	font-family: var(--secondary-font), sans-serif;
+	font-weight: 500;
+	font-size: 3.25rem;
+	width: 80%;
+	opacity: 0;
+	animation: intro 6s ease-out 0.5s;
+}
+
+@keyframes intro {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.navbar-logo {
+	width: 30px;
+}
+
+.logo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	width: 100%;
+	opacity: 0;
+	animation: logo 10s ease-out 9s;
+}
+
+.logo img {
+	width: inherit;
+}
+
+@keyframes logo {
+	0% {
+		opacity: 1;
+		transform: translate(-50%, -50%) scale(2);
+	}
+	70% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: translate(-50%, -50%) scale(0.1);
+	}
+}
+
+p {
+	color: #ffe81f;
+}
+
+#scroller {
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 350%;
+	text-align: justify;
+	overflow: hidden;
+	height: 50em;
+	width: 20em;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -10em;
+	z-index: 0;
+	transform: perspective(350px) rotateX(25deg);
+	transform-origin: 50% 100%;
+}
+
+#scroller::after {
+	position: absolute;
+	content: "";
+	bottom: 60%;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+
+#content {
+	position: absolute;
+	top: 100%;
+	animation: scoller 100s linear 16s;
+}
+
+@keyframes scoller {
+	0% {
+		top: 100%;
+	}
+	100% {
+		top: -200%;
+	}
+}
+
+#title,
+#subtitle {
+	text-align: center;
+	line-height: 1.5rem;
+}
+
+#subtitle {
+	text-transform: uppercase;
+	font-size: 3.5rem;
+}
+
 
 
 
@@ -70,84 +220,32 @@ main {
     width: 30px;
 }
 
-/* Services */
-
-#services .card-footer {
-    font-weight: bold;
-    color: var(--highlight-color);
-    background-color: transparent;
-}
-
-#services .card {
-    margin-bottom: 1.5rem;
-}
-
-/* Events */
-
-#events .table {
-    /* events table font size small enough that 
-      the table doesn't overflow on xs screens. 
-      Size set back to 1rem in a media query 
-      for sm screens and up */
-    font-size: 0.7rem;
-}
 
 
-/* Footer / contact */
-
-#contact {
-    background-color: var(--primary-color);
-    color: white;
-    padding-bottom: 2rem;
-}
-
-#contact h2 {
-    color: white;
-}
-
-#menu {
-    list-style-type: none;
-}
 
 /* Media queries */
 
 /* Small screens and up */
 @media screen and (min-width: 576px) {
-    /* increase font size in events table when screen size is large enough */
-    #events .table {
-        font-size: 1rem;
-    }
 
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
-    /* Make all service cards the same height for consistency */
-    #services .card-body {
-        min-height: 191px;
+   
     }
-}
 
 /* Large devices (small laptops, 992px and up) */
 @media screen and (min-width: 992px) {
-    /* Make all service cards the same height for consistency */
-    #services .card-body {
-        min-height: auto;
-    }
+    
 }
 
 /* xl devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
-    /* make all service cards the same height for consistency */
-    #services .card-body {
-        min-height: 220px;
-    }
+
 }
 
 /* xxl devices (larger desktops, 1400px and up) */
 @media screen and (min-width: 1400px) {
-    /* make all service cards the same height for consistency */
-    #services .card-body {
-        min-height: 195px;
-    }
+ 
 }
