@@ -176,11 +176,7 @@ p {
 
 #subtitle {
 	text-transform: uppercase;
-	font-size: 3.5rem;
 }
-
-
-
 
 h1,
 h2,
@@ -231,13 +227,19 @@ main {
 #scroller {
 	font-size: 250%;
 }
+#subtitle {
+	font-size: 3rem;
+}
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
  #scroller {
 	font-size: 350%;
-}   
+} 
+#subtitle {
+	font-size: 3rem;
+}  
 }
 
 /* Large devices (small laptops, 992px and up) */
@@ -245,17 +247,28 @@ main {
 #scroller {
 	font-size: 350%;
 } 
-   
+#subtitle {
+	font-size: 3.5rem;
+}  
+
 }
 
 /* xl devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
 #scroller {
 	font-size: 350%;
+}
+#subtitle {
+	font-size: 3.5rem;
 } 
 }
 
 /* xxl devices (larger desktops, 1400px and up) */
 @media screen and (min-width: 1400px) {
- 
+ #scroller {
+	font-size: 350%;
+}
+#subtitle {
+	font-size: 3.5rem;
+}
 }
