@@ -32,7 +32,8 @@ body {
 	background-color: #000;
 	overflow: hidden;
     font-family: var(--secondary-font);
-    padding-top: 57.15px; /* pushes the top of the header down under fixed navbar */
+	padding-top: 57.15px;  /* pushes the top of the header down under fixed navbar */
+   
 }
 
 body::after {
@@ -61,7 +62,7 @@ body::after {
 
 .intro {
 	position: absolute; 
-	top: 50%;
+	top: 50%; 
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 2;
@@ -129,17 +130,17 @@ p {
 #scroller {
 	font-family: sans-serif;
 	font-weight: bold;
-	font-size: 350%;
+/*	font-size: 350%; */
 	text-align: justify;
-	overflow: hidden;
+/*	overflow: hidden; */
 	height: 50em;
 	width: 20em;
 	position: absolute;
 	bottom: 0;
-	left: 50%;
-	margin-left: -10em;
+ 	left: 50%; 
+	margin-left: -10em; 
 	z-index: 0;
-	transform: perspective(350px) rotateX(25deg);
+	transform: perspective(200px) rotateX(25deg);
 	transform-origin: 50% 100%;
 }
 
@@ -227,22 +228,31 @@ main {
 
 /* Small screens and up */
 @media screen and (min-width: 576px) {
-
+#scroller {
+	font-size: 250%;
+}
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
-   
-    }
+ #scroller {
+	font-size: 350%;
+}   
+}
 
 /* Large devices (small laptops, 992px and up) */
 @media screen and (min-width: 992px) {
-    
+#scroller {
+	font-size: 350%;
+} 
+   
 }
 
 /* xl devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
-
+#scroller {
+	font-size: 350%;
+} 
 }
 
 /* xxl devices (larger desktops, 1400px and up) */
