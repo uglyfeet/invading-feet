@@ -132,7 +132,7 @@ p {
 	font-weight: bold;
 /*	font-size: 350%; */
 	text-align: justify;
-/*	overflow: hidden; */
+	overflow: hidden; 
 	height: 50em;
 	width: 20em;
 	position: absolute;
